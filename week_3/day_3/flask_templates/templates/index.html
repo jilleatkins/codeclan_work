@@ -1,0 +1,37 @@
+{% extends "task.html" %}
+{% block content %}
+
+<head>
+    <title>{{ title }} - My To-Do List</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+</head>
+<h1>My To-Do List</h1>
+
+<form action="/tasks" method="post">
+    <label for="title">Title:</label>
+    <input type="text" placeholder="e.g. Write up meal plan" name="title" id="title">
+    <br><br>
+    <label for="description">Description:</label>
+    <textarea name="description" placeholder="e.g. Include grain salad" rows="1" cols="30"></textarea>
+    <br><br>
+    <input type="submit" value="Add Task">
+    </label>
+    
+</form>
+
+{% for task in tasks %}
+<div>
+    <p>
+        <b>{{ task.title }}:</b> {{ task.description }}
+        {% if task.done %}
+        <span> &#x2713;</span>
+        {% else %}
+        <span> &#x2717;;</span>
+        {% endif %}
+    </p>
+</div>
+{% endfor %}
+{% endblock %}

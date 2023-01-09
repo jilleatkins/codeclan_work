@@ -1,0 +1,49 @@
+@import url("static/style.css");
+
+body {
+    background-color: white;
+  }
+  
+label {
+    color: black;
+    font-style: Times;
+  }
+
+h1 {
+    color: hotpink;
+    font-size: 40px;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 5px hotpink;
+  }
+
+p {
+  color: black;
+  font-size: 16px;
+  margin-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+form {
+  color: black;
+  font-size: 18px;
+  margin-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}

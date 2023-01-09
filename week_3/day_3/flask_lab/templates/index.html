@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>{{ title }} - The Food Shop</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1>Food Shop</h1>
+    </header>
+    <main>
+      <h2>Customers</h2>
+      <p>Select customer for order information</p>
+
+      {% for order in orders %}
+      <div>
+        <hr>
+            <p>
+                <a href="/orders/{{loop.index0}}">{{ order.customer_name }}</a>
+            </p>
+        <hr/>
+      {% endfor %}
+    </main>
+  </body>
+
+</html>

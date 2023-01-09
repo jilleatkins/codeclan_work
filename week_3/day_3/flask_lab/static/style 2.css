@@ -1,0 +1,12 @@
+@import url("static/style.css");
+
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: hotpink;
+    font-size: 40px;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
