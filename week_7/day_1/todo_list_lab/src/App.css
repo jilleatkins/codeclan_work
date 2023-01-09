@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Montserrat:wght@200;400;600&display=swap');
+
+.App {
+  width: 60%;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 54px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+li {
+  margin: 20px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+li span {
+  padding: 8px;
+}
+li button {
+  background: #73e2a7;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+li.completed {
+  font-display: #1b512d;
+  border: 2px solid ;
+  color: #1c7c54;
+  border-radius: 30px;
+}
+li.not-completed {
+  border: 2px solid #b1cf5f;
+  border-radius: 30px;
+}
+li.high {
+	border: 2px solid #f2360c;
+	color: #f2360c;
+}
+li.low {
+	border: 2px solid #1a681e;
+}
+input[type="text"] {
+  font-family: 'Montserrat', sans-serif;
+  padding: 12px;
+  width: 50%;
+  margin:5px;
+  border: solid 1px;
+  border-color: gray;
+  border-radius: 20px;
+}
+button, input[type="submit"] {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  margin-left: 10px;
+  background: #1c7c54;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #1c7c54;
+  border-radius: 20px;
+}
