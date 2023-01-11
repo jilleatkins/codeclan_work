@@ -1,0 +1,21 @@
+cd Change directory
+mkdir Make directory
+ls List items
+cd .. Move up a level in directory
+cd ../.. Move up two levels in directory
+cd ../../.. Move up three levels in directory
+-r Remove directory
+pwd Print working directory
+touch Create File
+ls -a List all items
+ls -l List item details
+rm -r Remove/delete a file or folder
+rm -fr Force remove recursively
+code . Open all files in current directory
+mv Change folder name
+mv -r Move a folder
+cp Copy
+cp -r Copy a folder
+cmd + k Clear screen
+~ Go to top of file system (EMERGENCY EXIT)
+mv "X.txt" ../ Move folder up in the file directory
